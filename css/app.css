@@ -2,6 +2,8 @@
 
 body {
 	font-family: 'Asap', sans-serif;
+	width: 30%;
+min-width: 320px;
 }
 
 #mifoto {
