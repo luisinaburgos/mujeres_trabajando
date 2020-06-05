@@ -114,14 +114,14 @@ $$(document).on('deviceready', function() {
 
 
 
-/** BUSCA EN LOCAL STORAGE SI HAY DATOS PARA INICIO DE SESION AUTOMÁTICO **/
+/** BUSCA EN LOCAL STORAGE SI HAY DATOS PARA INICIO DE SESION AUTOMÁTICO 
 personaGuardada = localstorage.getItem("persona");
 personaGuardada = JSON.parse(personaGuardada);
  if (personaGuardada != null) {
   email = personaGuardada.email;
   contrasenia = personaGuardada.contrasenia;
   login(email,contrasenia);
- };
+ };**/
 
 
 
@@ -157,9 +157,7 @@ $$(document).on('page:init', function (e) {
     }
     };
   })
-  $$("#login").on('click', function(){
-mainView.router.navigate("/about/");
-});
+
   $$("#registrar").on('click', registro);
 
 
