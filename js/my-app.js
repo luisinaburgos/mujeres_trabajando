@@ -158,10 +158,7 @@ $$(document).on('page:init', function (e) {
     };
   })
   $$("#login").on('click', function(){
-    email= $$("#emaillogin").val();
-    contrasenia= $$("#contrasenialogin").val();
-    console.log(email);
-    login(email, contrasenia)
+mainView.router.navigate("/about/");
 });
   $$("#registrar").on('click', registro);
 
@@ -352,7 +349,7 @@ function registro () {
 
 
 /** LOGIN DE USUARIO **/
-function login (email, contrasenia) {
+/**function login (email, contrasenia) {
     var huboError = 0;
 
     firebase.auth().signInWithEmailAndPassword(email, contrasenia)
@@ -381,7 +378,7 @@ function login (email, contrasenia) {
             mainView.router.navigate("/about/");
           }
       });
-};
+};**/
 
 
 
