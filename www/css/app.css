@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500&display=swap');
+
+body {
+	font-family: 'Asap', sans-serif;
+}
+
+#mifoto {
+	width: 150px;
+	height: 150px; 
+	object-fit: cover;
+object-position: center;
+border: 2px solid black;
+}
+
+.fotoanuncio, #img1, #img2 {
+		width: 145px;
+	height: 145px; 
+
+	object-fit: cover;
+object-position: center;
+border: 1px solid black;
+}
+
+.thumbnail {
+	
+	width: 130px;
+	height: 130px;
+	object-fit: cover;
+	object-position: center;
+    vertical-align: middle
+	
+}
+
+.col-45 {
+	
+}
+.desc {
+	margin: auto;
+	font-size: 12px;
+	text-align: justify;
+    overflow:hidden;
+
+    white-space:nowrap;
+
+    text-overflow: ellipsis;
+ 
+}
+
+
+
+
+
+#search {
+	border: 1px solid black;
+	margin: 4%;
+}
+
+.lupa {
+font-size: 40px;
+padding-right: 30%;
+}
+
+.cat {
+	width: 50%;
+}
+
+.nombrecategoria {
+	font-size: 11px;
+	text-align: center;
+	color: #b129f8;
+	font-family: 'Asap', sans-serif;
+	margin-top: 0;
+}
+
+.fila {
+	justify-content: center;
+	margin-bottom: 2%;
+}
+
+ .crearpublicacion{
+	color: white;
+	font-size: 12px;
+	margin-right: 5px;
+	background-color: #b129f8;
+	border: none;
+	border-radius: 5px;
+    padding: 2%;
+    width: 50%;
+   
+}
+
+.link {
+	color: #b129f8;
+}
+
+.iconos {
+	margin-top: 5%;
+}
+
+.navbar, .navbar-bg  {
+	background-color: black !important;
+
+}
+
+
+
+#logouser {
+	color: #b129f8;
+	margin: 0 0 0 20%;
+	font-size: 40px;
+}
+.ios .toggle input[type=checkbox]:checked+.toggle-icon {
+    background: #b129f8;
+
+}
+.ios .toggle-icon:after {
+    --f7-toggle-inactive-color: #555;
+}
+
+#volver {
+	color: white;
+}
+
+.resultado {
+	border: 1px solid black;
+	margin: 4%;
+	align-items: center;
+	justify-content: space-between;
+
+
+}
+
+#logocompleto2 {
+	width: 30%;
+}
+
+.tituloresultado {
+	text-align: left;
+	margin:0;
+	padding: 2%;
+	font-size: 20px;
+-webkit-hyphens: auto; 
+  -moz-hyphens: auto; 
+  -ms-hyphens: auto; 
+  hyphens: auto; 
+
+}
+
+#logocompleto {
+	width: 80%;
+}
+
+#login {
+	background-color: #b129f8;
+}
+
+#registrate {
+	color:#b129f8;
+}
+
+
+
+
+.list .item-label {
+	color: #b129f8;
+	
+}
+
+.md {--f7-input-placeholder-color: #5f5f5f;
+--f7-input-font-size: 14px;
+--f7-label-font-size: 14px;
+}
+
+.logochico {
+	width: 100%;
+}
+
+
+.barrasuperior {
+	justify-content: space-between;
+	align-items: center;
+}
+
+.deshabilitado {
+	color: #b129f8 !important;
+}
+
+.pie {
+	font-size: 10px;
+}
+
+.verMas {
+	background-color:black;
+	color: white;
+	border: none;
+	height: 5vh;
+}
+
+.rowcontacto {
+display: flex;
+justify-content: left;
+align-items: center;
+   margin: 2% 0;
+
+}
+
+#nombrepublicacion {
+	margin-top: 0;
+	font-family: 'Asap', sans-serif;
+}
+
+#nombrecategoria {
+	margin: 5% 0 0 0;
+	font-family: 'Asap', sans-serif;
+}
+
+#descpublicacion {
+	font-family: 'Asap', sans-serif;
+	margin: 0;
+}
+
+h3 {
+font-family: 'Asap', sans-serif;
+margin: 0;	
+}
+
+.bloquecont {
+	padding-left: 5%;
+}
+
+#estrella {
+	width: 50%;
+}
+
+.tit {
+	margin:0;
+}
+
+#fechapublicacion {
+	margin:0;
+}
+
+.contenedor1 {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+#resultit {
+	margin-left: 4%;
+}
+
+.eliminar {
+	width: 20% !important;
+    font-size: 12px !important;
+    padding: 0;
+    margin: 0;
+    background-color: transparent !important;
+    color: blue !important;
+    border: none;
+
+}
+
+.row2 {
+	justify-content: flex-end;
+}
+
+#reportar{
+font-size: 10px;
+width: 80%;
+}
+
+.contfotos {
+	display: flex;
+	justify-content: center;
+}
+
+.pub {
+	margin-top: 5%;
+}
+
+.contlogo {
+	align-items: baseline;
+}
+
+.popup-bienvenida {
+
+	height: 70vh;
+	margin: 50% 0;
+}
+
+.continuar {
+	display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+}
+
+.reglamento {
+ 
+    margin: 3% 5%;
+    padding: 3% 10%;
+}
+
+
+#reglas {
+	color: #b129f8;
+}

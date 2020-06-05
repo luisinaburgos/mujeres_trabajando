@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval'; script-src * 'unsafe-inline' 'unsafe-eval'; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src *; style-src * 'unsafe-inline'; font-src * data: URIs ">-->
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.bundle.min.css">
+    <!-- Path to icons -->
+    <link rel="stylesheet" href="css/icons.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+
+<body>
+
+    <div id="app">
+        <!-- Statusbar overlay -->
+        <div class="statusbar"></div>
+    
+        <!-- Your main view, should have "view-main" class -->
+
+        <div class="view view-main">
+
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="index" class="page">
+    
+        
+                <!-- Scrollable page content -->
+                <div class="page-content text-align-center" id="index">
+                    
+                    <div class="block">
+                    <div class="logogrande">
+                      <img src="img/logocompleto.png" id="logocompleto">
+                    </div>
+                    <form class="list">
+                             <ul>
+                                <li class="item-content item-input">
+                                  <div class="item-inner">
+                                    <div class="item-title item-label">E-mail</div>
+                                    <div class="item-input-wrap">
+                                      <input type="email" placeholder="Ingresa tu email" id="emaillogin" required class="log">
+                                      <span class="input-clear-button"></span>
+                                    </div>
+                                  </div>
+                                </li>
+                                    <li class="item-content item-input">
+                                  <div class="item-inner">
+                                    <div class="item-title item-label">Contraseña</div>
+                                    <div class="item-input">
+                                      <input type="password" placeholder="Ingresa tu contraseña" id="contrasenialogin" required class="log">
+                                      <span class="input-clear-button"></span>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </form>
+                            <a href="#" class="button button-round button-fill" id="login">Iniciar sesión</a>
+                    <!-- Link to another page -->
+
+
+
+                    <!-- EL POPUP -->
+                      <p><a href="#" data-popup=".my-popup" class="popup-open" id="registrate">¿No tenés cuenta? Registrate aquí</a></p>
+
+                      <!-- 
+                        EL POPUP:
+                        - Ver que la relacion se propude con la clase .my-popup
+                        - El o los elementos que lo abren tienen la clase .popup-open y abrirá el popup definido en data-popup
+                        - El o los elementos que lo cierren tienen la clase popup-close y se cerrará a sí mismo. 
+                       -->
+                       <!-- Popup de bienvenida -->
+                       <div class="popup popup-bienvenida">
+                          <div class="block bienvenida">
+                            <h2>¡Bienvenida!</h2>
+                            <p>Mujeres Trabajando es un espacio donde las mujeres pueden publicar sus ofertas de productos o servicios y también acceder a las ofertas de otras, con el fin de fomentar el trabajo femenino y las redes de solidaridad entre nosotras.</p>
+                            <p>Te recomendamos que antes de empezar a utilizar la app leas el reglamento y la ayuda, dentro de tu panel. ¡Muchas Gracias!</p>
+
+                          </div>
+                          <div class="row continuar">
+                          <a class="link popup-close" href="#">Continuar</a>
+                        </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+                      <div class="popup my-popup">
+                        <div class="view">
+                          <div class="page">
+                            <div class="navbar">
+                              <div class="navbar-bg"></div>
+                              <div class="navbar-inner">
+                               <a class="link popup-close" href="#"><i class="icon icon-back"></i></a>
+
+                                <div class="title">Registro</div>
+                              </div>
+                            </div>
+                            <div class="page-content">
+                            
+
+                            <form class="list">
+                             <ul>
+                                <li class="item-content item-input">
+                                  <div class="item-inner">
+                                    <div class="item-title item-label">E-mail</div>
+                                    <div class="item-input-wrap">
+                                      <input type="email" placeholder="Ingresa tu email" id="emailregistro" required>
+                                      <span class="input-clear-button"></span>
+                                    </div>
+                                  </div>
+                                </li>
+                                    <li class="item-content item-input">
+                                  <div class="item-inner">
+                                    <div class="item-title item-label">Contraseña</div>
+                                    <div class="item-input">
+                                      <input type="password" placeholder="Ingresa tu contraseña" id="contraseniaregistro" required>
+                                      <span class="input-clear-button"></span>
+                                      <div class="item-input-info">Debe contener al menos 6 caracteres</div>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </form>
+                            <a href="#" class="button button-round button-fill" id="registrar">Enviar</a>
+                           
+
+
+
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.bundle.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDHUksRhgYDW3NzYQoQXkAy2gYCyi-_OBw",
+    authDomain: "proyecto-mujerestrabajando.firebaseapp.com",
+    databaseURL: "https://proyecto-mujerestrabajando.firebaseio.com",
+    projectId: "proyecto-mujerestrabajando",
+    storageBucket: "proyecto-mujerestrabajando.appspot.com",
+    messagingSenderId: "955505581863",
+    appId: "1:955505581863:web:716d28dfcbaf6307e31302"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+</body>
+
+</html>
