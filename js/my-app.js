@@ -346,7 +346,7 @@ function registro () {
 
 
 
-/** LOGIN DE USUARIO **/
+/** LOGIN DE USUARIO 
 /**function login (email, contrasenia) {
     var huboError = 0;
 
